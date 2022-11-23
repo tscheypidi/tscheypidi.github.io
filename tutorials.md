@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Tutorials
-image: assets/images/pic03.jpg
+description: A collection of tutorials to get started
+image: assets/images/pic09.jpg
 nav-menu: true
 ---
 
