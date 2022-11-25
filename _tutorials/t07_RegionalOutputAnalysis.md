@@ -1,6 +1,7 @@
 ---
 layout: tutorial
 title:  Regional output analysis
+image: assets/images/generic/pic07.jpg
 shortID: output
 lastUpdated:   2022-01-27
 model: MAgPIE

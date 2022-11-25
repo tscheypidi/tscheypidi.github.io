@@ -1,6 +1,7 @@
 ---
 layout: tutorial
 title: Model documentation (goxygen)
+image: assets/images/generic/pic03.jpg
 shortID: goxygen
 lastUpdated: 2022-01-05
 model: MAgPIE

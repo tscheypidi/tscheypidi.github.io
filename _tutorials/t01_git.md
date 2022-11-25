@@ -1,6 +1,7 @@
 ---
 layout: tutorial
 title:  Git & the GitHub repository
+image: assets/images/generic/pic01.jpg
 shortID: git
 lastUpdated:   2022-03-06
 model: MAgPIE

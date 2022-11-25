@@ -29,7 +29,7 @@ show_tile: true
 {% for tutorial in site.tutorials %}
 <section>
 		<a href="{{tutorial.url}}" class="image">
-			<img src="{% link assets/images/generic/pic01.jpg %}" alt="" data-position="center center" />
+			<img src="{{tutorial.image}}" alt="" data-position="center center" />
 		</a>
 		<div class="content">
 			<div class="inner">
@@ -80,11 +80,11 @@ show_tile: true
 <section id="three">
 	<div class="inner">
 		<header class="major">
-			<h2>Massa libero</h2>
+			<h2>Further information</h2>
 		</header>
-		<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
+		<p>If you are seeking further information and want to get deeper involved in the MAgPIE and MADRaT development you can have a look at our events page where you can find dates of regular community events as well as the upcoming workshops or related conferences.</p>
 		<ul class="actions">
-			<li><a href="generic.html" class="button next">Get Started</a></li>
+			<li><a href="{% link events.md %}" class="button next">Go to events</a></li>
 		</ul>
 	</div>
 </section>

@@ -1,6 +1,7 @@
 ---
 layout: tutorial
 title:  Starting a MAgPIE run
+image: assets/images/generic/pic04.jpg
 shortID: start
 lastUpdated: 2020-11-20
 model: MAgPIE

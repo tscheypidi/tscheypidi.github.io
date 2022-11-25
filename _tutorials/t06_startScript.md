@@ -1,6 +1,7 @@
 ---
 layout: tutorial
 title:  Creating a start script
+image: assets/images/generic/pic06.jpg
 shortID: startScript
 lastUpdated:   2022-03-07
 model: MAgPIE

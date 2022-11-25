@@ -1,6 +1,7 @@
 ---
 layout: tutorial
 title:  Spatial output analysis
+image: assets/images/generic/pic08.jpg
 shortID: output2
 lastUpdated:   2022-03-01
 model: MAgPIE

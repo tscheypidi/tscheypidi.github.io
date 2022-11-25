@@ -1,6 +1,7 @@
 ---
 layout: tutorial
 title:  GAMS code, modules & realizations
+image: assets/images/generic/pic02.jpg
 shortID: gams
 lastUpdated:   2022-03-06
 model: MAgPIE

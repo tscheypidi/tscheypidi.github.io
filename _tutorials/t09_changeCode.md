@@ -1,6 +1,7 @@
 ---
 layout: tutorial
 title:  Creating a new realization
+image: assets/images/generic/pic09.jpg
 shortID: changeCode
 lastUpdated:   2022-03-10
 model: MAgPIE

@@ -1,6 +1,7 @@
 ---
 layout: tutorial
 title:  Git pull requests - feeding back
+image: assets/images/generic/pic10.jpg
 shortID: pr
 lastUpdated: 2022-03-03
 model: MAgPIE
