@@ -74,7 +74,7 @@ The main model folder should contain the folders and files shown in the
 following figure (note that depending on your settings for hidden files, 
 folders and files starting with `.` might not be shown):
 
-![Contents of folder where MAgPIE is cloned](../assets/img/MAgPIE_folder.png)
+![Contents of folder where MAgPIE is cloned](../assets/images/tutorials/MAgPIE_folder.png)
 
 The MAgPIE config file is called **default.cfg** and located within the 
 **config folder**. To open the MAgPIE config file follow the following
@@ -130,7 +130,7 @@ As MAgPIE is modular in structure, each module has its own section in the
 config file. Here, the module realization is chosen and additional module parameters
 are set, as shown in the following figure for the *technological change (13_tc)* module.
 
-![Example of a module section in the default.cfg file](../assets/img/moduleSectionConfigFile.png)
+![Example of a module section in the default.cfg file](../assets/images/tutorials/moduleSectionConfigFile.png)
 
 The following table gives a description of core components from the MAgPIE config file.
 Additionally, settings are also explained within the config file, by comments preceeding

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "MAgPIE developer meetings"
+image: assets/images/generic/pic02w.jpg
 date:   2021-10-21 10:00:00 +0200
 author: jpd
 categories: magpie

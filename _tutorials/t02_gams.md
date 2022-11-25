@@ -33,7 +33,7 @@ interdependence and more detailed information can be found in our
 Here, we want to shortly draw your attention to the ‘main line’ of
 module interdependence:
 
-<img src="../assets/img/magpie_model.gif" alt="centered image" width="450"/>
+<img src="../assets/images/tutorials/magpie_model.gif" alt="centered image" width="450"/>
 
 - The future projections of population and GDP for given scenario
   assumptions represent the main drivers of the model.
@@ -69,7 +69,7 @@ When you open the `modules` folder, you see a long list of the individual
 modules and the `include.gms` file that ensures the inclusion of all modules into the
 `full.gms`. All modules are built similarly and follow the same structure:
 
-![structure of any module](../assets/img/module_struc.png)
+![structure of any module](../assets/images/tutorials/module_struc.png)
 
   - An input folder with overarching input files for all realizations
   - Realization folders containing the source code of each realization

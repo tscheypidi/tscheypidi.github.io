@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Save the date!"
+image: assets/images/generic/pic02w.jpg
 date:   2021-10-05 14:00:00 +0200
 author: jpd
 categories: magpie22

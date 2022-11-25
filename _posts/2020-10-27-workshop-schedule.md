@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Workshop schedule"
+image: assets/images/generic/pic03w.jpg
 date:   2021-10-14 11:00:00 +0200
 author: jpd
 categories: magpie22

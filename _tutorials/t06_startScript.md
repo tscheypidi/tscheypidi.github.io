@@ -305,7 +305,7 @@ realizations. As stated earlier, we’ll make 4 runs with changes to
 trade module and land module. Figure 1 describes and explains the
 available module realizations for these two modules.
 
-![Module setting combinations](../assets/img/module-settings.png)
+![Module setting combinations](../assets/images/tutorials/module-settings.png)
 
 The loop we write should change the config based on which module
 realization we choose. Here, lets try making runs with the following

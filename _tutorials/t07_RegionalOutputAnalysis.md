@@ -112,15 +112,15 @@ Rscript output.R
 You are now asked to choose the simulation run for which you would like to
 execute an output script.
 
-![Selection of model runs](../assets/img/Rscript_output_runselection.png)
+![Selection of model runs](../assets/images/tutorials/Rscript_output_runselection.png)
 
 Next, you can choose which output scripts you want to execute:
 
-![Selection of model-internal output scripts](../assets/img/Rscript_output_scriptselection.png)
+![Selection of model-internal output scripts](../assets/images/tutorials/Rscript_output_scriptselection.png)
 
 The last step is to select the run submission type, e.g. “Direct execution”:
 
-![Selection of run submission type](../assets/img/Rscript_output_submissiontype.png)
+![Selection of run submission type](../assets/images/tutorials/Rscript_output_submissiontype.png)
 
 Now, the selected script will be executed. After completion, the results are
 written in the respective folder of the simulation run inside the
@@ -166,7 +166,7 @@ the model outputs that can be simulated with a MAgPIE standard
 simulation, even though the validation PDF only shows a subset of
 possible model outputs:
 
-![Table of contents of the validation pdf](../assets/img/validationPDF_toc.png)
+![Table of contents of the validation pdf](../assets/images/tutorials/validationPDF_toc.png)
 
 ## Interactive scenario analysis
 
@@ -194,17 +194,17 @@ This command opens an interactive window, where you can select the
 simulations that you want to
 evaluate.
 
-![Interactive MAgPIE app](../assets/img/appResults_window.png)
+![Interactive MAgPIE app](../assets/images/tutorials/appResults_window.png)
 
 You can use filters to select a subset of all runs stored in the output
 folder of the model, for example by searching for runs that have been
 finished at a certain day, have been created by a certain user
 or by searching for keywords in the title of the simulation runs:
 
-![Run selection by using a filter](../assets/img/appResults_runselection.png)
+![Run selection by using a filter](../assets/images/tutorials/appResults_runselection.png)
 
 
-![How to use the title for filtering runs](../assets/img/appResults_runselection_title.png)
+![How to use the title for filtering runs](../assets/images/tutorials/appResults_runselection_title.png)
 
 After having selected the subset of runs that you want to analyse, click
 the button *Load selection*. Now, you can click on the tab *LinePLot*.
@@ -213,14 +213,14 @@ development of population for historical and future time steps for all
 model regions and on the global
 scale:
 
-![Regional and global development of population](../assets/img/appResults_LinePlot.png)
+![Regional and global development of population](../assets/images/tutorials/appResults_LinePlot.png)
 
 Now, choose a variable of your interest, either by scrolling through the
 drop-down menu or write a key word in the input field, e.g. “cropland”,
 to reduce the options in the
 menu.
 
-![Selection of variables for line plots](../assets/img/appResults_LinePlot_variables.png)
+![Selection of variables for line plots](../assets/images/tutorials/appResults_LinePlot_variables.png)
 
 Make yourself familiar with the features of the app\! You can, for
 example, select a subset of regions or a subset of time steps for which
@@ -240,7 +240,7 @@ can have a look in the folder **magpie4/R**. The following figure shows
 a subset of R-files included in
 **magpie4/R**:
 
-![Subset of R functions of the magpie4 library](../assets/img/subset_functions_magpie4.png)
+![Subset of R functions of the magpie4 library](../assets/images/tutorials/subset_functions_magpie4.png)
 
 To make yourself familiar with this library, you can open an R/RStudio
 session and set the MAgPIE model folder as working directory. This can
@@ -261,7 +261,7 @@ You can click on the index and search for interesting functions, e.g.
 **carbonstock**, and read the respective help
 page:
 
-![Help page of the carbonstock-function of the magpie4 library](../assets/img/magpie4_help_carbonstock.png)
+![Help page of the carbonstock-function of the magpie4 library](../assets/images/tutorials/magpie4_help_carbonstock.png)
 
 
 ## Analyzing outputs with the gdx library

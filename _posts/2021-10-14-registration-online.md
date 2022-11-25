@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Workshop registration online"
+image: assets/images/generic/pic01w.jpg
 date:   2021-10-14 10:00:00 +0200
 author: jpd
 categories: magpie22

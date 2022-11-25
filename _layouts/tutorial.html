@@ -1,0 +1,122 @@
+---
+layout: post
+---
+
+<style>
+  blockquote.infobox {
+    color:black;
+    background: #f9f9f9;
+    font-style:normal;
+    padding: 1em;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    border:2px solid #a9a9a9;
+  }
+  .infobox p {
+    margin:0
+  }
+
+  .p-author a {
+    color:grey;
+  }
+</style>
+
+{% assign people = site.pages | where: "shortID", "people" | first %}
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/TechArticle">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="dateLastUpdated">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.lastUpdated | date: date_format }}
+      </time>
+      {% if page.modelVersion %} {{page.model}} v{{page.modelVersion}} {% endif %}
+      {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">
+          {% assign sep = "" %}
+          {% for author in page.author %}
+            {%- assign person = people.data | where: "id", author | first -%}
+            {{- sep -}}
+            {%- if person.url -%}
+              <a href="{{person.url}}">{{ person.firstName }} {{ person.lastName }}</a>
+            {%- elsif person.lastName -%}
+              {{ person.firstName }} {{ person.lastName }}
+            {%- else -%}
+              {{ author }}
+            {%- endif -%}
+            {%- assign sep = ", " -%}
+          {%- endfor -%}
+        </span></span>
+      {%- endif -%}</p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+
+    <p>{% if page.previous.url %}<a href="{{page.previous.url}}">&lt; {{page.previous.title}}</a> {% endif %}
+    | <a href=".">Overview</a> |
+    {% if page.next.url %} <a href="{{page.next.url}}">{{page.next.title}} &gt;</a>{% endif %}</p>
+
+    <blockquote class="infobox">
+      <h4>Level:
+    {% if page.level == 0 %}
+      ⚪⚪⚪⚪⚪ <span style="color:purple">All levels
+    {% elsif page.level == 1 %}
+      ⚫⚪⚪⚪⚪ <span style="color:green">Beginner
+    {% elsif page.level == 2 %}
+      ⚫⚫⚪⚪⚪ <span style="color:green">Beginner
+    {% elsif page.level == 3 %}
+      ⚫⚫⚫⚪⚪ <span style="color:orange">Advanced
+    {% elsif page.level == 4 %}
+      ⚫⚫⚫⚫⚪ <span style="color:orange">Advanced
+    {% elsif page.level == 5 %}
+      ⚫⚫⚫⚫⚫ <span style="color:red">Expert
+    {% endif %} </h4>
+      <h4>Requirements</h4>
+      <ul>
+      {% for req in page.requirements %}
+        <li>{{ req | markdownify}}</li>
+        {% endfor %}
+      </ul>
+
+      <h4>Content</h4>
+      <ul>
+      {% for lesson in page.lessonsContent %}
+        <li>{{ lesson | markdownify }}</li>
+      {% endfor %}
+      </ul>
+
+      <h4>Overview</h4>
+    {% include toc.html html=content %}
+    </blockquote>
+
+    {{ content }}
+
+    <br />
+
+    {% if page.exercises %}
+    <blockquote class="infobox">
+      <h4>Exercises <small>(click on the arrows to uncover the solution)</small></h4>
+        {% for exercise in page.exercises %}
+        <details>
+          <summary>{{ exercise.task}}</summary>
+          <blockquote>{{ exercise.solution | markdownify }}</blockquote>
+        </details>
+        {% endfor %}
+    </blockquote>
+    {% endif %}
+
+    <p>{% if page.previous.url %}<a href="{{page.previous.url}}">&lt; {{page.previous.title}}</a> {% endif %}
+    | <a href=".">Overview</a> |
+    {% if page.next.url %} <a href="{{page.next.url}}">{{page.next.title}} &gt;</a>{% endif %}</p>
+
+  </div>
+
+{%- if site.disqus.shortname -%}
+{%- include disqus_comments.html -%}
+{%- endif -%}
+
+<a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>

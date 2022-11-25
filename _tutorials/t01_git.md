@@ -63,7 +63,7 @@ prefered one. Note the following:
 
 # GitHub workflow for magpiemodel
 
-![GitHub workflow](../assets/img/github_workflow.png)
+![GitHub workflow](../assets/images/tutorials/github_workflow.png)
 
 Every code development (even bugfixes) will be merged into our main
 repository under <https://github.com/magpiemodel/magpie> with the help
@@ -101,7 +101,7 @@ To start new developments we create feature branches to keep the develop
 branch clean. In the following figure you can see a simple example for
 branches and their relationships.
 
-![Git Branches](../assets/img/git_branches.png)
+![Git Branches](../assets/images/tutorials/git_branches.png)
 
   - The master branch of the upstream repository will be created by the
     magpiemodel team after accumulation of new developments in the
@@ -131,7 +131,7 @@ Here we just want to draw your attention to: - the branching workflow,
 we kindly ask you to use and - the various working areas of the git
 workflow.
 
-![Git basics](../assets/img/git_basics.png)
+![Git basics](../assets/images/tutorials/git_basics.png)
 
 Git wil help you not only to push changes to your remote repositories to
 version control them, you will also locally control your development

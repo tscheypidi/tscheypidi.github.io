@@ -222,7 +222,7 @@ better _git_ etiquette (i.e. nicer for the maintainers) to have smaller, discret
 In particular I have added a single line, detailing the addition of the `FSEC_environmentalPollutants.R` 
 output script.
 
-![PR_1](../assets/img/PR_1_CHANGELOG.png)
+![PR_1](../assets/images/tutorials/PR_1_CHANGELOG.png)
 
 
 ---
@@ -232,7 +232,7 @@ output script.
 With my added output script and corresponding update to the `CHANGELOG.md`, I need to commit my changes and push 
 them to my own fork. I first _staged_ the changes (by running `git add *` in the terminal) and now _commit_ them:
 
-![PR_2](../assets/img/PR_2_commit.png)
+![PR_2](../assets/images/tutorials/PR_2_commit.png)
 
 
 ---
@@ -241,7 +241,7 @@ them to my own fork. I first _staged_ the changes (by running `git add *` in the
 
 Unless you've heavily customized your fork, you will want to push this new commit to `origin:develop`, as below:
 
-![PR_3](../assets/img/PR_3_push.png)
+![PR_3](../assets/images/tutorials/PR_3_push.png)
 
 
 ---
@@ -252,7 +252,7 @@ Unless you've heavily customized your fork, you will want to push this new commi
 
 From here we initiate the PR from `github.com`. Navigating to my own fork, we see my new commit is represented:
 
-![PR_4](../assets/img/PR_4_GitHub_recentCommit.png)
+![PR_4](../assets/images/tutorials/PR_4_GitHub_recentCommit.png)
 
 One can futher observe that my branch is `1 commit ahead of magpiemodel:develop`.
 
@@ -261,14 +261,14 @@ One can futher observe that my branch is `1 commit ahead of magpiemodel:develop`
 
 I now navigate to `Pull requests` in the top-left menu, clicking `New pull request`.
 
-![PR_5](../assets/img/PR_5_GitHub_createPullRequest.png)
+![PR_5](../assets/images/tutorials/PR_5_GitHub_createPullRequest.png)
 
 
 ---
 
 Now is a key step wherein you should check a number of details before creating your new pull request.
 
-![PR_6](../assets/img/PR_6_GitHub_createPullRequest2.png)
+![PR_6](../assets/images/tutorials/PR_6_GitHub_createPullRequest2.png)
 
 1. Verify that you are merging **from** your correct, forked, branch **to** the correct branch of the `magpiemodel/magpie` 
 repository (this should almost without exception be the `develop` branch).
@@ -289,7 +289,7 @@ The PR template is a space for you to describe the changes you've made to the MA
 for MAgPIE's maintainers to review the code and assess the level of detail needed to safely integrate it into
 the main repository. One should go through the template thoroughly and address each checkbox.
 
-![PR_7](../assets/img/PR_7_GitHub_PRTemplate.png)
+![PR_7](../assets/images/tutorials/PR_7_GitHub_PRTemplate.png)
 
 ---
 
@@ -332,7 +332,7 @@ After completing the PR template you should request at least two reviewers from 
 After recieving your PR request, both MAgPIE maintainers will independently review your changes and request 
 clarifications or changes as appropriate. 
 
-![PR_8](../assets/img/PR_8_GitHub_PRTemplate_Reviewers.png)
+![PR_8](../assets/images/tutorials/PR_8_GitHub_PRTemplate_Reviewers.png)
 
 The reviewers, one of whom must be from the Research and Software Engineering (RSE) department at PIK, use the above
 checklist. After this interaction has been completed, they will accept the PR and it will be automatically merged 
