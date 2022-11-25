@@ -33,39 +33,51 @@ layout: post
       {%- endif -%}</p>
   </header>
 
+<style>
+
+ul.toc {
+  margin:0; 
+  list-style-type: none
+	}
+
+</style>
+
   <div class="post-content e-content" itemprop="articleBody">
 
     <div class="box">
+
       <h4>Level:
     {% if page.level == 0 %}
-      ⚪⚪⚪⚪⚪ <span style="color:purple">All levels
+      ⚪⚪⚪⚪⚪ <span style="color:#8d82c4">All levels
     {% elsif page.level == 1 %}
-      ⚫⚪⚪⚪⚪ <span style="color:green">Beginner
+      ⚫⚪⚪⚪⚪ <span style="color:#87c5a4">Beginner
     {% elsif page.level == 2 %}
-      ⚫⚫⚪⚪⚪ <span style="color:green">Beginner
+      ⚫⚫⚪⚪⚪ <span style="color:#87c5a4">Beginner
     {% elsif page.level == 3 %}
-      ⚫⚫⚫⚪⚪ <span style="color:orange">Advanced
+      ⚫⚫⚫⚪⚪ <span style="color:#e7b788">Advanced
     {% elsif page.level == 4 %}
-      ⚫⚫⚫⚫⚪ <span style="color:orange">Advanced
+      ⚫⚫⚫⚫⚪ <span style="color:#e7b788">Advanced
     {% elsif page.level == 5 %}
-      ⚫⚫⚫⚫⚫ <span style="color:red">Expert
+      ⚫⚫⚫⚫⚫ <span style="color:#ec8d81">Expert
     {% endif %} </h4>
       <h4>Requirements</h4>
       <ul>
       {% for req in page.requirements %}
-        <li>{{ req | markdownify}}</li>
+        <li>{{ req | markdownify  | remove: '<p>' | remove: '</p>'}}</li>
         {% endfor %}
       </ul>
 
       <h4>Content</h4>
       <ul>
       {% for lesson in page.lessonsContent %}
-        <li>{{ lesson | markdownify }}</li>
+        <li>{{ lesson | markdownify | remove: '<p>' | remove: '</p>'}}</li>
       {% endfor %}
       </ul>
 
       <h4>Overview</h4>
-    {% include toc.html html=content %}
+      <div class="6u 12u$(small)">
+    {% include toc.html html=content class="toc" submenu_class="toc" anchor_class="scrolly" %}
+      </div>
     </div>
 
     {{ content }}
