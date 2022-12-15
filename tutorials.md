@@ -28,8 +28,8 @@ show_tile: true
 <section id="two" class="spotlights">
 {% for tutorial in site.tutorials %}
 <section>
-		<a href="{{tutorial.url}}" class="image">
-			<img src="{{tutorial.image}}" alt="" data-position="center center" />
+		<a href="tutorial.url" class="image">
+			<img src="{% link {{tutorial.image}} %}" alt="" data-position="center center" />
 		</a>
 		<div class="content">
 			<div class="inner">
