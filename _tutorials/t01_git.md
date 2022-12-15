@@ -40,7 +40,6 @@ exercises:
                3. Fetch changes via ``git fetch magpie``.\n
                4. Merge changes into your current branch via ``git merge magpie/<branch>``.\n
                5. Push changes via ``git push``."
-categories: tutorial
 published: true
 ---
 

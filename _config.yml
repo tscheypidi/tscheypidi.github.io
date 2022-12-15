@@ -28,6 +28,11 @@ collections:
     permalink: /:collection/:name
     title: Tutorials
     sort_by: lesson
+  showcases:
+    output: true
+    permalink: /showcase/:name
+    title: Showcase
+    
 
 # social settings (key must match name of font awesome icon)
 # see Https://Fontawesome.Com/Icons?D=Gallery&P=2&S=Brands
@@ -44,9 +49,6 @@ markdown: kramdown
 
 sass:
   style: compressed
-
-include:
-  - _showcase
 
 exclude:
 - "*.gemspec"
