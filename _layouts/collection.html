@@ -1,10 +1,5 @@
 ---
-title: Tutorials
 layout: landing
-description: 'A collection of tutorials to get started'
-image: assets/images/generic/pic07.jpg
-nav-menu: true
-show_tile: true
 ---
 
 <!-- Main -->
@@ -14,10 +9,9 @@ show_tile: true
 <section id="one">
 	<div class="inner">
 		<header class="major">
-			<h2>Introduction to MAgPIE and MADRaT</h2>
+			<h2>{{ page.intro_header }}</h2>
 		</header>
-		<p>The following is the collection of tutorials which help in getting accquainted with the MAgPIE global land system framework as well as with the MADRaT data preprocessing framework. The latter is used in MAgPIE to preprocess the input data, but also can be used independently for other data processing tasks.</p>
-		<p>Tutorials are listed in the recommended order. Difficulty and recommended experience level are indicated in the title.</p>
+		<p>{{ page.intro_text | markdownify }}</p>
 		<ul class="actions">
           <li><a href="#two" class="button next scrolly">Get Started</a></li>
         </ul>
@@ -26,49 +20,53 @@ show_tile: true
 
 <!-- Two -->
 <section id="two" class="spotlights">
-{% for tutorial in site.tutorials %}
+{% for element in site[page.collection] %}
 <section>
-		<a href="{{tutorial.url}}" class="image">
-			<img src="{% link {{tutorial.image}} %}" alt="" data-position="center center" />
+		<a href="element.url" class="image">
+			<img src="{% link {{element.image}} %}" alt="" data-position="center center" />
 		</a>
 		<div class="content">
 			<div class="inner">
 				<header class="major">
-					<h3>{% if tutorial.level == 0 %}
+					<h3>{% if element.level == 0 %}
   ⚫⚫⚫⚫⚫ 
-{% elsif tutorial.level == 1 %}
+{% elsif element.level == 1 %}
   ⚪⚫⚫⚫⚫
-{% elsif tutorial.level == 2 %}
+{% elsif element.level == 2 %}
   ⚪⚪⚫⚫⚫ 
-{% elsif tutorial.level == 3 %}
+{% elsif element.level == 3 %}
   ⚪⚪⚪⚫⚫ 
-{% elsif tutorial.level == 4 %}
+{% elsif element.level == 4 %}
   ⚪⚪⚪⚪⚫
-{% elsif tutorial.level == 5 %}
+{% elsif element.level == 5 %}
   ⚪⚪⚪⚪⚪ <span style="color:red">Expert
-{% endif %} {{tutorial.title}}
-{% if tutorial.level == 0 %}
+{% endif %} {{element.title}}
+{% if element.level == 0 %}
  <span style="color:#8d82c4">All levels
-{% elsif tutorial.level == 1 %}
+{% elsif element.level == 1 %}
  <span style="color:#87c5a4">Beginner
-{% elsif tutorial.level == 2 %}
+{% elsif element.level == 2 %}
  <span style="color:#87c5a4">Beginner
-{% elsif tutorial.level == 3 %}
+{% elsif element.level == 3 %}
  <span style="color:#e7b788">Advanced
-{% elsif tutorial.level == 4 %}
+{% elsif element.level == 4 %}
  <span style="color:#e7b788">Advanced
-{% elsif tutorial.level == 5 %}
+{% elsif element.level == 5 %}
  <span style="color:#ec8d81">Expert
 {% endif %} </span>
 </h3>
 				</header>
-				<p><ul>
-  {% for lesson in tutorial.lessonsContent %}
-    <li>{{ lesson | markdownify | remove: '<p>' | remove: '</p>' }}</li>
-  {% endfor %}
-  </ul></p>
+				<p>{{element.description}}
+					{% if header_image %}
+					<ul>
+                      {% for lesson in element.lessonsContent %}
+                        <li>{{ lesson | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+                      {% endfor %}
+					</ul>
+					{% endif %}
+				</p>
 				<ul class="actions">
-					<li><a href="{{tutorial.url}}" class="button">Start tutorial</a></li>
+					<li><a href="{{element.url}}" target = "{{ page.button_target }}" class="button">{{ page.button_label }}</a></li>
 				</ul>
 			</div>
 		</div>

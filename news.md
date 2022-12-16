@@ -1,10 +1,10 @@
 ---
 layout: allposts
 title: News
+description: 'Relevant updates around MAgPIE'
 image: assets/images/generic/pic01w.jpg
-nav-menu: true
-description: null
 author: null
+nav-menu: true
 show_tile: true
 ---
 

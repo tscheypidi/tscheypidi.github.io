@@ -1,6 +1,6 @@
 ---
 title: Showcases
-description: 'Showcase applications of the model'
+description: 'Applications examples of the model'
 layout: landing
 image: assets/images/generic/pic07.jpg
 nav-menu: true
@@ -18,7 +18,7 @@ show_tile: true
 			<h2>A collection of MAgPIE showcases</h2>
 		</header>
 		<p>MAgPIE has so far been used in various scientific publications and
-        reports. The following list give some more details about selected 
+        reports. The following list gives some more details about selected 
         applications.</p>
 		<ul class="actions">
           <li><a href="#two" class="button next scrolly">Get Started</a></li>
@@ -57,9 +57,9 @@ show_tile: true
 		<header class="major">
 			<h2>Further information</h2>
 		</header>
-		<p>If you are seeking further information and want to get deeper involved in the MAgPIE and MADRaT development you can have a look at our events page where you can find dates of regular community events as well as the upcoming workshops or related conferences.</p>
+		<p>If you are seeking further information you can have a look at our news page where you can find recent updates of the MAgPIE universe including announcements of upcoming events.</p>
 		<ul class="actions">
-			<li><a href="{% link events.md %}" class="button next">Go to events</a></li>
+			<li><a href="{% link news.md %}" class="button next">Go to news</a></li>
 		</ul>
 	</div>
 </section>
