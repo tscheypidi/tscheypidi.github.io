@@ -22,7 +22,7 @@ layout: landing
 <section id="two" class="spotlights">
 {% for element in site[page.collection] %}
 <section>
-		<a href="element.url" class="image">
+		<a href="{{element.url}}" class="image">
 			<img src="{% link {{element.image}} %}" alt="" data-position="center center" />
 		</a>
 		<div class="content">
@@ -57,7 +57,7 @@ layout: landing
 </h3>
 				</header>
 				<p>{{element.description}}
-					{% if header_image %}
+					{% if element.lessonsContent %}
 					<ul>
                       {% for lesson in element.lessonsContent %}
                         <li>{{ lesson | markdownify | remove: '<p>' | remove: '</p>' }}</li>
@@ -78,11 +78,11 @@ layout: landing
 <section id="three">
 	<div class="inner">
 		<header class="major">
-			<h2>Further information</h2>
+			<h2>{{ page.outtro_header }}</h2>
 		</header>
-		<p>If you are seeking further information and want to get deeper involved in the MAgPIE and MADRaT development you can have a look at our events page where you can find dates of regular community events as well as the upcoming workshops or related conferences.</p>
+		<p>{{ page.outtro_text | markdownify }}</p>
 		<ul class="actions">
-			<li><a href="{% link events.md %}" class="button next">Go to events</a></li>
+			<li><a href="{% link {{ page.outtro_button_url }} %}" class="button next">{{ page.outtro_button_header }}</a></li>
 		</ul>
 	</div>
 </section>
