@@ -1,0 +1,29 @@
+
+var codeBlocks = document.querySelectorAll('pre.highlight');
+
+
+codeBlocks.forEach(function (codeBlock) {
+  var  Button = document.createElement('button');
+   Button.className = 'button small';
+   Button.type = 'button';
+   Button.ariaLabel = 'Copy code to clipboard';
+   Button.innerText = 'Copy code';
+
+
+  codeBlock.append( Button);
+
+
+   Button.addEventListener('click', function () {
+    var code = codeBlock.querySelector('code').innerText.trim();
+    window.navigator.clipboard.writeText(code);
+
+
+     Button.innerText = 'Code Copied';
+    var fourSeconds = 4000;
+
+
+    setTimeout(function () {
+       Button.innerText = 'Copy code';
+    }, fourSeconds);
+  });
+});
