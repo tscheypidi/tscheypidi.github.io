@@ -16,6 +16,6 @@ webcal://cloud.pik-potsdam.de/remote.php/dav/public-calendars/3a2r4TYXw7es7ZGt/?
 
 Alternatively, you can open the calendar [online](https://cloud.pik-potsdam.de/index.php/apps/calendar/p/3a2r4TYXw7es7ZGt/dayGridMonth/now) in owncloud.
 
-<a href="https://cloud.pik-potsdam.de/index.php/apps/calendar/p/3a2r4TYXw7es7ZGt/dayGridMonth/now" class="button">view calendar</a>
+<a href="https://cloud.pik-potsdam.de/index.php/apps/calendar/p/3a2r4TYXw7es7ZGt/dayGridMonth/now" class="button" target="_blank">view calendar</a>
 
 
