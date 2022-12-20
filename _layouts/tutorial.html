@@ -95,7 +95,7 @@ layout: post
     {% endif %}
 
     <p>{% if page.previous.url %}<a href="{{page.previous.url}}" class="button previous">{{page.previous.title}}</a> {% endif %}
-      <a href="." class="button">Overview</a>
+      <a href="{% link tutorials.md %}" class="button">Overview</a>
       {% if page.next.url %} <a href="{{page.next.url}}" class="button next">{{page.next.title}}</a>{% endif %}</p>
   
   </div>
