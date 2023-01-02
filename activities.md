@@ -1,10 +1,21 @@
 ---
 layout: post
-title: Events
-description: Infos about upcoming events
+title: Activities
+description: Infos about events & activities
 image: assets/images/generic/pic04.jpg
 nav-menu: true
 ---
+
+## Topic bazaar
+
+To better link different activities around MAgPIE we created the [topic bazaar](https://github.com/magpiemodel/magpie/discussions/categories/topic-bazaar). It is a space where everyone is invited to share own research or development plans around MAgPIE and to potentially join forces with other MAgPIE developer and users or just to get feedback. 
+
+With a constantly growing community around MAgPIE chances are high that you are not the only one thinking into a certain direction and making promoting your ideas on the topic bazaar will help to avoid parallel developments and instead help to speed up your research.
+
+<a href="https://github.com/magpiemodel/magpie/discussions/categories/topic-bazaar" class="button" target="_blank">open topic bazaar</a>
+
+
+## Event calendar
 
 In terms of events we have all 4 weeks a monthly Open4All MAgPIE developer meetings for which everyone interested is invited to join. Besides that we plan to have once a year a MAgPIE introduction workshop as well as a community event to provide some room for exchange.
 
