@@ -8,7 +8,7 @@ nav-menu: true
 
 ## Topic bazaar
 
-To better link different activities around MAgPIE we created the <a href="https://github.com/magpiemodel/magpie/discussions/categories/topic-bazaar" target="_blank>topic bazaar</a>. It is a space where everyone is invited to share own research or development plans around MAgPIE and to potentially join forces with other MAgPIE developer and users or just to get feedback. 
+To better link different activities around MAgPIE we created the <a href="https://github.com/magpiemodel/magpie/discussions/categories/topic-bazaar" target="_blank">topic bazaar</a>. It is a space where everyone is invited to share own research or development plans around MAgPIE and to potentially join forces with other MAgPIE developer and users or just to get feedback. 
 
 With a constantly growing community around MAgPIE chances are high that you are not the only one thinking into a certain direction and making promoting your ideas on the topic bazaar will help to avoid parallel developments and instead help to speed up your research.
 
