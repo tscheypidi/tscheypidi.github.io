@@ -56,7 +56,7 @@ layout: landing
 {% endif %} </span>
 </h3>
 				</header>
-				<p>{{element.description}}
+				<p>{{element.description | markdownify }}
 					{% if element.lessonsContent %}
 					<ul>
                       {% for lesson in element.lessonsContent %}
