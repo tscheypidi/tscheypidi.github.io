@@ -22,7 +22,7 @@ layout: landing
 <section id="two" class="spotlights">
 {% for element in site[page.collection] %}
 <section>
-		<a href="{{element.url}}" class="image">
+		<a href="{{element.url}}" target = "{{ page.button_target }}" class="image">
 			<img src="{{element.image}}" alt="" data-position="center center" />
 		</a>
 		<div class="content">
