@@ -17,6 +17,13 @@ data:
     id: jpd
     url: https://www.pik-potsdam.de/members/dietrich
     image: assets/images/team/dietrich.jpg
+    affiliation: pik
+    role: 
+      - Lead developer
+      - Group lead Land Use Management
+    keywords: 
+      - Research Software Engineering
+      - Technological Change
   - firstName: Abhijeet
     lastName: Mishra
     id: am
@@ -73,5 +80,8 @@ data:
     lastName: Crawford
     id: mc
     url: https://www.pik-potsdam.de/members/crawford
-
+affiliations:
+  - id: pik
+    name: Potsdam Institute for Climate Impact Research (PIK)
+    country: Germany
 ---
