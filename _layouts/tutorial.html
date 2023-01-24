@@ -2,7 +2,7 @@
 layout: post
 ---
 
-{% assign people = site.pages | where: "shortID", "people" | first %}
+{% assign team = site.pages | where: "shortID", "team" | first %}
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/TechArticle">
 
@@ -17,7 +17,7 @@ layout: post
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">
           {% assign sep = "" %}
           {% for author in page.author %}
-            {%- assign person = people.data | where: "id", author | first -%}
+            {%- assign person = team.data | where: "id", author | first -%}
             {{- sep -}}
             {%- if person.url -%}
               <a href="{{person.url}}">{{ person.firstName }} {{ person.lastName }}</a>

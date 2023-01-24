@@ -1,9 +1,9 @@
 ---
-show_tile: false
-layout: page
+show_tile: true
+layout: team
 publish: false
-title: People
-shortID: people
+title: Team
+shortID: team
 data:
   - firstName: Hermann
     lastName: Lotze-Campen
@@ -17,6 +17,7 @@ data:
     lastName: Dietrich
     id: jpd
     url: https://www.pik-potsdam.de/members/dietrich
+    image: assets/images/team/dietrich.jpg
   - firstName: Abhijeet
     lastName: Mishra
     id: am

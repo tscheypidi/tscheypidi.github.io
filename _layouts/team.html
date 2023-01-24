@@ -1,0 +1,23 @@
+---
+layout: post
+---
+
+{% assign team = site.pages | where: "shortID", "team" | first %}
+
+
+{% for person in page.data %}
+{{- sep -}}
+{%- if person.image -%}
+<img src="{{person.image}}" alt="{{ person.firstName }} {{ person.lastName }}", class="round">
+{%- endif -%}
+{%- if person.url -%}
+  <a href="{{person.url}}">{{ person.firstName }} {{ person.lastName }}</a>
+{%- elsif person.lastName -%}
+  {{ person.firstName }} {{ person.lastName }}
+{%- else -%}
+  {{ author }}
+{%- endif -%}
+{%- assign sep = ", " -%}
+{%- endfor -%}
+
+
