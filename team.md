@@ -1,7 +1,6 @@
 ---
-show_tile: true
+show_tile: false
 layout: team
-publish: false
 title: Team
 shortID: team
 data:
