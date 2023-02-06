@@ -4,20 +4,30 @@ layout: post
 
 {% assign team = site.pages | where: "shortID", "team" | first %}
 
-
+<div class="inner">
 {% for person in page.data %}
-{{- sep -}}
+<div class="col-4 col-12-medium">
+  {%- if person.url -%}<a href="{{person.url}}" class="image">{%- endif -%}
 {%- if person.image -%}
 <img src="{{person.image}}" alt="{{ person.firstName }} {{ person.lastName }}", class="round">
 {%- endif -%}
-{%- if person.url -%}
-  <a href="{{person.url}}">{{ person.firstName }} {{ person.lastName }}</a>
-{%- elsif person.lastName -%}
+  {%- if person.url -%}</a>{%- endif -%}
+  <div class="team-person-description">
+  <h3>{%- if person.url -%}<a href="{{person.url}}">{%- endif -%}
   {{ person.firstName }} {{ person.lastName }}
-{%- else -%}
-  {{ author }}
-{%- endif -%}
-{%- assign sep = ", " -%}
+  {%- if person.url -%}</a>{%- endif -%}</h3>
+  <h4>{%- assign sep = "" -%}
+  {% for role in person.role %}
+    {{- sep -}}
+    {{ role }}
+    {%- assign sep= ", " -%}
+  {%- endfor -%}</h4>
+  {%- assign sep = "" -%}
+  <p>{% for keyword in person.keywords %}
+    {{- sep -}}
+    {{ keyword }}
+    {%- assign sep= ", " -%}
+  {%- endfor -%}</p>
+  </div>
 {%- endfor -%}
-
-
+</div>

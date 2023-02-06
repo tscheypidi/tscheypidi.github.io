@@ -13,11 +13,13 @@ img {
 .round {
 	border-radius: 50%;
 	width: 200px;
+	height: 200px;
+	object-fit: cover;
 }
 
 .image {
 		border: 0;
-		display: inline-block;
+		display: i	nline-block;
 		position: relative;
 
 		img {

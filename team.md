@@ -7,10 +7,16 @@ data:
   - firstName: Hermann
     lastName: Lotze-Campen
     id: hlc
+    role: 
+      - Founder of MAgPIE
+      - Head of Research Department 2 "Climate Resilience" @ PIK
+    image: assets/images/team/lotzecampen.jpg
     url: https://www.pik-potsdam.de/members/hlotze
   - firstName: Alexander
     lastName: Popp
     id: ap
+    role: Co-lead Land Use Management @ PIK
+    image: assets/images/team/popp.jpg
     url: https://www.pik-potsdam.de/members/popp
   - firstName: Jan Philipp
     lastName: Dietrich
@@ -20,7 +26,7 @@ data:
     affiliation: pik
     role: 
       - Lead developer
-      - Group lead Land Use Management
+      - Co-lead Land Use Management @ PIK
     keywords: 
       - Research Software Engineering
       - Technological Change
