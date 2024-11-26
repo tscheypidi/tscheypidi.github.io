@@ -2,7 +2,8 @@
 title: Tutorials
 layout: collection
 description: 'A collection of tutorials to get started'
-image: assets/images/generic/pic03.jpg
+image: assets/images/generic/lu5.jpg
+style: 5
 nav-menu: true
 show_tile: true
 collection: tutorials

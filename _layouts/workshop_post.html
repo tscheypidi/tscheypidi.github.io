@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+{% include head.html %}
+
+<body>
+
+    {% include header.html %} 
+    
+{% assign workshopPages = site["workshops"] | where: "workshopID", page.workshopID  | where: "published", true %}
+{% assign workshopPages = workshopPages | where: "published", true %}
+{% assign home = workshopPages | where: "home", true | first %}
+{% assign workshopTitle = home.title %}
+    
+<!-- Main -->
+<div id="main" class="alt2">
+
+<section class="style2">
+	<div class="inner">
+			<center>
+		<header class="major">
+
+			<h1> {{ workshopTitle }} </h1>
+
+		</header>
+
+		<div class="content">
+
+		<a href = {{ home.url }} >Home</a> |
+		<a href = "./timetable.html">Timetable</a> |
+		<a href = "./registration.html">Register</a>
+
+		</div>
+		</center>
+	</div>
+</section>
+
+<section class="tile">
+	<p>
+	{{ content }}
+	</p>
+</section>
+
+<section id="two" class="tile">
+	<h3>Contents</h3>
+{% for element in workshopPages  %}
+{% if element.home != true  %}
+<section>
+		<a href="{{element.url}}" target = "{{ page.button_target }}"">
+			{{ element.title }}
+		</a>
+</section>
+{% endif %}
+{% endfor %}
+</section>
+
+</div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>

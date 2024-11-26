@@ -14,6 +14,9 @@ zip_code: 14473
 country: Germany
 phone:
 
+plugins:
+  - jekyll-redirect-from
+
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
 tiles-count: 6
@@ -21,7 +24,6 @@ tiles-count: 6
 collections:
   events:
     output: true
-    permalink: /events/:name
     title: Events
   tutorials:
     output: true
@@ -32,6 +34,9 @@ collections:
     output: true
     permalink: /showcase/:name
     title: Showcase
+  workshops:
+    output: true
+    title: Workshop
     
 
 # social settings (key must match name of font awesome icon)
@@ -43,6 +48,7 @@ socials:
   home: https://www.pik-potsdam.de/en/institute/departments/transformation-pathways/research/landuse
   github: https://github.com/magpiemodel/magpie
   wikipedia-w: https://en.wikipedia.org/wiki/MAgPIE
+  book: https://rse.pik-potsdam.de/doc/magpie/4.8.2
  
 # build settings
 markdown: kramdown

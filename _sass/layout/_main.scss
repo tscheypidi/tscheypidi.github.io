@@ -23,4 +23,9 @@
 			background-color: transparent;
 			border-bottom: solid 1px _palette(border);
 		}
+		&.alt2 {
+			background-color: transparent;
+			border-bottom: solid 1px _palette(border);
+			padding: 2em;
+		}
 	}

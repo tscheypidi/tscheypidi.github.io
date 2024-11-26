@@ -1,8 +1,10 @@
 ---
-layout: post
+layout: posttwo
 title: Activities
 description: Infos about events & activities
-image: assets/images/generic/pic04.jpg
+image: assets/images/generic/lu10.jpg
+style: 1
+show_image: true
 nav-menu: true
 ---
 
@@ -28,5 +30,3 @@ webcal://cloud.pik-potsdam.de/remote.php/dav/public-calendars/3a2r4TYXw7es7ZGt/?
 Alternatively, you can open the calendar [online](https://cloud.pik-potsdam.de/index.php/apps/calendar/p/3a2r4TYXw7es7ZGt/dayGridMonth/now) in owncloud.
 
 <a href="https://cloud.pik-potsdam.de/index.php/apps/calendar/p/3a2r4TYXw7es7ZGt/dayGridMonth/now" class="button" target="_blank">view calendar</a>
-
-

@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Workshop registration closed"
-image: assets/images/generic/pic01w.jpg
 date:   2020-12-31 12:00:00 +0200
+image: assets/images/generic/pic02.jpg
 author: jpd
 categories: magpie22
 published: false

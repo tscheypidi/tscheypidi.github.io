@@ -2,7 +2,8 @@
 title: Showcases
 layout: collection
 description: 'Applications examples of the model'
-image: assets/images/generic/pic03w.jpg
+image: assets/images/generic/lu17.jpg
+style: 3
 nav-menu: true
 show_tile: true
 collection: showcases

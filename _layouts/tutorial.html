@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posttwo
 ---
 
 {% assign team = site.pages | where: "shortID", "team" | first %}
@@ -45,17 +45,17 @@ layout: post
 
       <h4>Level:
     {% if page.level == 0 %}
-      ⚫⚫⚫⚫⚫ <span style="color:#8d82c4">All levels
+      ⚪⚪⚪⚪⚪ <span style="color:#8d82c4">All levels
     {% elsif page.level == 1 %}
-      ⚪⚫⚫⚫⚫ <span style="color:#87c5a4">Beginner
+      ⚫⚪⚪⚪⚪ <span style="color:#87c5a4">Beginner
     {% elsif page.level == 2 %}
-      ⚪⚪⚫⚫⚫ <span style="color:#87c5a4">Beginner
+      ⚫⚫⚪⚪⚪ <span style="color:#87c5a4">Beginner
     {% elsif page.level == 3 %}
-      ⚪⚪⚪⚫⚫ <span style="color:#e7b788">Advanced
+      ⚫⚫⚫⚪⚪ <span style="color:#e7b788">Advanced
     {% elsif page.level == 4 %}
-      ⚪⚪⚪⚪⚫ <span style="color:#e7b788">Advanced
+      ⚫⚫⚫⚫⚪ <span style="color:#e7b788">Advanced
     {% elsif page.level == 5 %}
-      ⚪⚪⚪⚪⚪ <span style="color:#ec8d81">Expert
+      ⚫⚫⚫⚫⚫ <span style="color:#ec8d81">Expert
     {% endif %} </h4>
       <h4>Requirements</h4>
       <ul>
