@@ -1,0 +1,34 @@
+---
+layout: landing
+---
+
+<!-- Main -->
+<div id="main">
+
+<!-- Two -->
+<section id="two" class="spotlights">
+{% assign workshops = site[page.collection] | where: "home", "true" | reverse %}
+{% for element in workshops %}
+<section>
+		<a href="{{element.url}}" target = "{{ page.button_target }}" class="image">
+			<img src="{{element.image}}" alt="" data-position="center center" />
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3>
+						{{element.title}}
+</h3>
+				</header>
+				<p>{{element.description | markdownify }}
+				</p>
+				<ul class="actions">
+					<li><a href="{{element.url}}" target = "{{ page.button_target }}" class="button">{{ page.button_label }}</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+{% endfor %}
+</section>
+
+</div>

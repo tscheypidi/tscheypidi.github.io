@@ -1,0 +1,98 @@
+---
+layout: post
+---
+
+<style>
+  blockquote.abstract {
+    color:#021c08;
+    background: #d8e6e8;
+    font-style:normal;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    border:0;
+    padding: 1em;
+  }
+
+  .nowrap {
+    white-space: nowrap ;
+  }
+</style>
+
+<p>{{ content | markdownify}}</p>
+
+{% assign people = site.pages | where: "shortID", "people" | first %}
+
+{% if page.agenda %}
+<table>
+  <tbody>
+{% for item in page.agenda %}
+    <tr>
+      <td>{{item.length}}min</td>
+      {% if item.shortID %}
+      {% assign elem = site.tutorials | where: "shortID", item.shortID | first %}
+      <td><a href="{{ elem.url }}">{{ elem.title }}</a></td>
+      <td>{% if elem.level == 0 %}
+          ⚪⚪⚪⚪⚪ <span style="color:purple">All levels
+        {% elsif elem.level == 1 %}
+          ⚫⚪⚪⚪⚪ <span style="color:green">Beginner
+        {% elsif elem.level == 2 %}
+          ⚫⚫⚪⚪⚪ <span style="color:green">Beginner
+        {% elsif elem.level == 3 %}
+          ⚫⚫⚫⚪⚪ <span style="color:orange">Advanced
+        {% elsif elem.level == 4 %}
+          ⚫⚫⚫⚫⚪ <span style="color:orange">Advanced
+        {% elsif elem.level == 5 %}
+          ⚫⚫⚫⚫⚫ <span style="color:red">Expert
+        {% endif %}</span>
+      </td>
+      {% else %}
+        <td colspan="2">
+        {% if item.abstract %}
+        <details>
+          <summary>{% if item.url %}
+            <a href="{{item.url}}">{{item.title}}</a>
+          {% else %}
+            {{item.title}}
+          {% endif %}</summary>
+          <blockquote class="abstract">{{ item.abstract | markdownify }}</blockquote>
+        </details>
+        {% else %}
+          {% if item.url %}
+            <a href="{{item.url}}">{{item.title}}</a>
+          {% else %}
+            {{item.title}}
+          {% endif %}
+        {% endif %}
+        </td>
+      {% endif %}
+      <td>
+      {% assign person = people.data | where: "id", item.presenter | first %}
+      <span class="nowrap">{% if person.url %}
+        <a href="{{person.url}}">{{person.firstName}} {{person.lastName}}</a>
+      {% elsif person.lastName %}
+        {{person.firstName}} {{person.lastName}}
+      {% else %}
+        {%if item.presenterURL %}
+          <a href="{{item.presenterURL}}">{{item.presenter}}</a>
+        {% else %}
+          {{item.presenter}}
+        {% endif %}
+      {% endif %}</span>
+      <br/> {{item.institution}} {{item.country}}
+      </td>
+    </tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+
+{% assign timetable = site.pages | where: "title", "Timetable" | where: "workshopID", page.workshopID %}
+<p>
+{% if page.previous.url %}
+  <a href="{{page.previous.url}}">&lt; previous</a>
+{% endif %}
+| <a href="{{timetable.url}}">back to overview</a> |
+{% if page.next.url %}
+ <a href="{{page.next.url}}">next &gt;</a></p>
+{% endif %}

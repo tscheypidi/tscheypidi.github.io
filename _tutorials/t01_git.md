@@ -40,6 +40,7 @@ exercises:
                3. Fetch changes via ``git fetch magpie``.\n
                4. Merge changes into your current branch via ``git merge magpie/<branch>``.\n
                5. Push changes via ``git push``."
+categories: tutorial
 published: true
 ---
 
@@ -101,7 +102,7 @@ To start new developments we create feature branches to keep the develop
 branch clean. In the following figure you can see a simple example for
 branches and their relationships.
 
-![Git Branches](../assets/images/tutorials/git_branches.png)
+![Git Branches](/assets/images/tutorials/git_branches.png)
 
   - The master branch of the upstream repository will be created by the
     magpiemodel team after accumulation of new developments in the

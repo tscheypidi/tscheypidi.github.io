@@ -1,0 +1,34 @@
+---
+layout:
+title:
+permalink: /calendar-ics/
+nav-menu: false
+show_tile: false
+---
+
+<link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.3.1/main.min.css' rel='stylesheet' />
+<script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.3.1/main.min.js'></script>
+<script src=" https://cdn.jsdelivr.net/npm/ical@0.8.0/ical.min.js "></script>
+<script src=" https://cdn.jsdelivr.net/npm/@fullcalendar/icalendar@6.1.15/index.global.min.js "></script>
+
+<script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var loadingEl = document.getElementById('loading');
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      events: {
+        url: "../events/3a2r4TYXw7es7ZGt-2024-08-31.ics",
+        format: 'ics'
+      },
+      eventTimeFormat: { hour: 'numeric', minute: '2-digit', timeZoneName: 'short' },
+    });
+
+    calendar.render();
+
+    // when the timezone selector changes, dynamically change the calendar option
+  });
+
+</script>
+<div id="calendar"></div>

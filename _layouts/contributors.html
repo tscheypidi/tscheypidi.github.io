@@ -1,0 +1,48 @@
+---
+layout: posttwo
+---
+
+<p>
+  MAgPIE is a large collaborative effort with contributors spanning multiple continents.
+</p>
+  
+ {% assign contributors = site.pages | where: "shortID", "contributors" | first %}
+  
+ {% assign people = page.data %}
+ <div id={{ subteam.id }} class="subteam">
+ 
+ <h3> Meet the contributors </h3>
+
+<div class="flex-container">
+  {% for person in people %}  
+  <div class="flex-inner">
+    <center>
+    {%- if person.url -%}<a href="{{person.url}}" class="image">{%- endif -%}
+      {%- if person.image -%}
+        <img src="{{person.image}}" alt="{{ person.firstName }} {{ person.lastName }}" , class="round">
+      {%- endif -%}
+      {%- if person.url -%}
+    </a>{%- endif -%}
+    <div class="">
+      <h3>{%- if person.url -%}<a href="{{person.url}}">{%- endif -%}
+          {{ person.firstName }} {{ person.lastName }}
+          {%- if person.url -%}</a>{%- endif -%}</h3>
+      <h5>{%- assign sep = "" -%}
+        {% for role in person.role %}
+        {{ role }}
+        <br />
+        {%- endfor -%}
+      </h5>
+      {%- assign sep = "" -%}
+      <h6>{% for keyword in person.keywords %}
+        {{ keyword }}
+        <br />
+        {%- endfor -%}
+      </h6>
+    </div>
+    </center>
+  </div>
+  {% endfor %}
+</div> 
+
+</div>
